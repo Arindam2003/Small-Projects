@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caresol</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    html{
+      font-size: 62.5%;
+    }
+    .container-img{
+      height: 50rem;
+      width: 60vw;
+      background-image: url("./pexels-pixabay-33109.jpg");
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-size: cover;
+      animation: gallery 20s linear infinite;
+    }
+
+    @keyframes gallery {
+      0%{
+        background-image: url("./pexels-nguyendesigner-20694722.jpg");
+      }
+      30%{
+        background-image: url("./pexels-pixabay-33109.jpg");
+      }
+      60%{
+        background-image: url("./pexels-jakubzerdzicki-20639510.jpg");
+      }
+      90%{
+        background-image: url("./pexels-danny-meneses-340146-943096.jpg");
+      }
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container-img"></div>
+</body>
+</html>

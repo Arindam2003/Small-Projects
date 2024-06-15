@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aquamarine;
+            height: 100vh;
+
+            /* trick 1st  */
+            /* position: relative; */
+
+            /* trick 2nd flex */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            /* 3rd trick grid */
+
+            display: grid;
+            place-items: center;
+        }
+        .child{
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+
+            /* trick 1st */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+
+            /* trick 2nd flex */
+
+            /* 3rd trick grid  */
+            text-transform: uppercase;
+            color: aliceblue;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="child">
+        center text
+    </div>
+</body>
+</html>
